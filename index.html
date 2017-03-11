@@ -33,15 +33,15 @@ $.ajax({
 		    method: "GET",
 		    dataType: "jsonp"
 			}).done(function(response) {
-				var rate = 0;
-				var theSpot;
-				for(var i=0; i < response.results.length; i++){
-					if(rate < response.results[i].rating){
-						rate = response.results[i].rating;
-						theSpot = response.results[i].name;
-					}
-				console.log(theSpot);
-			}
+			// 	var rate = 0;
+			// 	var theSpot;
+			// 	for(var i=0; i < response.results.length; i++){
+			// 		if(rate < response.results[i].rating){
+			// 			rate = response.results[i].rating;
+			// 			theSpot = response.results[i].name;
+			// 		}
+			// 	console.log(theSpot);
+			// }
 			});
 	});
 
